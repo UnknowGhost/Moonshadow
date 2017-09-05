@@ -9,6 +9,8 @@ public class tekenen extends Applet {
 
     public void paint(Graphics g) {
         setBackground(Color.white);
+        g.drawString("driehoek", 20, 50 );
+
         g.setColor(Color.black);
         g.drawLine(100, 120, 150, 50);
         g.drawLine(150, 50, 200, 120);
