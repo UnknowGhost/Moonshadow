@@ -27,7 +27,8 @@ public class lolz extends Applet {
         g.setColor(Color.blue);
         g.drawString("Justin", 50, 60 );
         g.setColor(Color.red);
-        g.drawString("Zonneveld", 85, 60 );
+        g.drawString("Zonneveld", 88, 60 );
+        g.drawString("lolz", 149, 60 );
     }
 
 }

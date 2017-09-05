@@ -4,16 +4,15 @@ import java.awt.*;
 import java.applet.*;
 
 public class tekenen extends Applet {
-
     public void init() {
     }
 
     public void paint(Graphics g) {
-        setBackground(Color.black);
-        g.setColor(Color.white);
-        g.drawLine(20, 50, 130, 50 );
-        g.drawLine(20, 50, 100, 130 );
-        g.drawLine(20, 160, 130, 50 );
+        setBackground(Color.white);
+        g.setColor(Color.black);
+        g.drawLine(100, 120, 150, 50);
+        g.drawLine(150, 50, 200, 120);
+        g.drawLine(100, 120, 200, 120);
     }
 }
 
