@@ -14,7 +14,6 @@ public class Diagram extends Applet {
         g.drawLine(20, 180, 180, 180);
         g.drawLine(20, 20,20,180);
 
-
     }
 
 }
