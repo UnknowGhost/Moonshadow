@@ -12,6 +12,7 @@ public class HuisjeMetRaamEnDeur extends Applet {
         g.setColor(Color.yellow);
         g.drawRect(120, 150, 120, 80);
         g.drawRect(140, 190, 30, 20);
+        g.drawLine(240, 150, 180, 50);
     }
 }
 
