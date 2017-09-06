@@ -8,8 +8,8 @@ public class HuisjeMetRaamEnDeur extends Applet {
     }
 
     public void paint(Graphics g) {
-        setBackground(Color.blue);
-        g.setColor(Color.yellow);
+        setBackground(Color.WHITE);
+        g.setColor(Color.black);
         g.drawRect(120, 150, 120, 80);
         g.drawRect(140, 190, 30, 20);
         g.drawLine(240, 150, 180, 50);

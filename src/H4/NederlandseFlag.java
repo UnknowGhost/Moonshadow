@@ -9,9 +9,17 @@ public class NederlandseFlag extends Applet {
     }
 
     public void paint(Graphics g) {
-        setBackground(Color.blue);
-        g.setColor(Color.yellow);
-        g.drawRect(20, 20, 100, 50);
-        g.fillRect(20, 80, 100, 50);
+        setBackground(Color.orange);
+        g.setColor(Color.black);
+       g.fillRoundRect(30, 40, 4, 120, 4, 120);
+       g.setColor(Color.red);
+       g.fillRect(30, 45, 75, 15);
+       g.setColor(Color.white);
+       g.fillRect(30,60,75, 15);
+       g.setColor(Color.blue);
+       g.fillRect(30,75,75,15);
+
+
+
     }
 }
