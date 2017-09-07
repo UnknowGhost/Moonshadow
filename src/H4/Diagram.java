@@ -20,6 +20,8 @@ public class Diagram extends Applet {
         g.drawString("80",15, 100);
         g.drawString("100", 10, 80);
         g.drawString("120", 10, 60);
+        g.setColor(Color.blue);
+        g.fillRect(10, 10, 10, 10);
 
 
     }
