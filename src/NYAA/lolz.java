@@ -25,8 +25,8 @@ public class lolz extends Applet {
     public void paint(Graphics g) {
         g.setColor(Color.black);
         g.drawRect(100,150,120,100);
-        g.drawLine(100, 150,120,110);
-        g.drawLine(220,150, 130,100);
+        g.drawLine(100, 150,160,70);
+        g.drawLine(220,150, 240,180);
 
     }
 
