@@ -27,6 +27,9 @@ public class Diagram extends Applet {
         g.fillRect(80, 95,20,85);
         g.drawString("Hans",75, 200);
         g.setColor(Color.magenta);
+        g.fillRect(120, 135, 20,45 );
+        g.drawString("valarie",115, 200);
+        
 
 
     }
