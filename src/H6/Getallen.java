@@ -27,3 +27,8 @@ public class Getallen extends Applet{
 
 
 }
+
+
+
+
+
