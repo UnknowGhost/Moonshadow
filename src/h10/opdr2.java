@@ -5,11 +5,13 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Opdr1 extends Applet{
+public class opdr2 extends Applet{
     Button knop1;
     TextField textvak;
+    TextField textvak2;
     int hoogstegetal;
     int invoer;
+    int laagstegetal;
     String tekst;
 
     public void init(){
@@ -23,6 +25,7 @@ public class Opdr1 extends Applet{
         add(textvak);
 
         hoogstegetal = Integer.MIN_VALUE;
+        laagstegetal = Integer.MAX_VALUE;
 
         tekst = "";
     }
@@ -30,16 +33,23 @@ public class Opdr1 extends Applet{
     public void paint(Graphics g) {
 
         g.drawString("Het hoogste getal is: " + hoogstegetal,50,50);
+        g.drawString("het laagste getal is: " + laagstegetal,50,70);
     }
 
-    class InvoerListener implements ActionListener{
+    class InvoerListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-           String invoerGebruiker = textvak.getText();
-           invoer = Integer.parseInt(invoerGebruiker);
-           if (invoer > hoogstegetal){
-               hoogstegetal = invoer;
-           }
-           repaint();
+            String invoerGebruiker = textvak.getText();
+            invoer = Integer.parseInt(invoerGebruiker);
+            if (invoer > hoogstegetal) {
+                hoogstegetal = invoer;
+                repaint();
+            }
+
+            if (invoer < laagstegetal) {
+                laagstegetal = invoer;
+
+                repaint();
+            }
 
         }
 

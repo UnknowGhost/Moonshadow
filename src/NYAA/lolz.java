@@ -16,17 +16,16 @@ import java.applet.*;
 
 //een klasse met de naam Show van het type Applet
 public class lolz extends Applet {
+    int y;
 
     public void init() {
-        setBackground(Color.white);
 
     }
 
     public void paint(Graphics g) {
-        g.setColor(Color.black);
-        g.drawRect(100,150,120,100);
-        g.drawLine(100, 150,160,70);
-        g.drawLine(220,150, 240,180);
+        g.drawString("justin",50,70);
+        g.drawString("Zonneveld",50,85);
+
 
     }
 
