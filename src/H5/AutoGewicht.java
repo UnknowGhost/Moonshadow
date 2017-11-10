@@ -10,9 +10,9 @@ public class AutoGewicht extends Applet {
 
     public void init() {
         hoogteXAs = 180;
-        gewichtValarie = 120;
-        gewichtJeroen = 90;
-        gewichtHans = 10;
+        gewichtValarie = 60;
+        gewichtJeroen = 100;
+        gewichtHans = 80;
 
     }
 
