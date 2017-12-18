@@ -28,7 +28,7 @@ public class PraktijkOpdracht1 extends Applet {
         for (int tafel = 0; tafel <= 10; tafel++) {
             antwoord = tafel * invoer;
 
-            g.drawString("" + antwoord ,20, y);
+            g.drawString(tafel + " X " + invoer + " = " + antwoord, 50, y);
 
             y += 20;
         }
