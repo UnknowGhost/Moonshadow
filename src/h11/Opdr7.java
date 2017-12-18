@@ -3,6 +3,8 @@ package h11;
 import java.applet.Applet;
 import java.awt.*;
 
+import static java.lang.Float.MAX_VALUE;
+
 public class Opdr7 extends Applet {
 
     public void init() {

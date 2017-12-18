@@ -19,7 +19,7 @@ public class Opdr3 extends Applet {
         int x = 0;
         int y = 20;
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100; i++) {
             g.drawString("" + som, x, y);
             getal1 = getal2;
             getal2 = som;
