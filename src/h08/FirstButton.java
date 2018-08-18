@@ -9,40 +9,36 @@ import java.awt.event.ActionListener;
 public class FirstButton extends Applet {
     Button knop1;
     Button knop2;
-    TextField tekstvak;
-    String s;
-
+    TextField teksvak;
+    int string;
 
     public void init() {
-        tekstvak = new TextField("", 30);
-        knop1 = new Button("ok");
-        knop2 = new Button("reset");
-        knop1.addActionListener( new TekstvakListener() );
-        knop2.addActionListener( new TekstvakListener2() );
-        add(tekstvak);
+        knop1 = new Button("OK");
+        knop2 = new Button("Reset");
+
+        teksvak = new TextField("click hier", 20);
+
         add(knop1);
+        add(teksvak);
         add(knop2);
-        s = ("");
 
     }
 
     public void paint(Graphics g) {
-        g.drawString(s, 50, 60);
-        g.drawString("Klik op ok om uw teks op het beeld te laten komen", 50, 90);
-        g.drawString("Klik op reset om uw tekst te resetten", 50, 100);
     }
 
     class TekstvakListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            s = tekstvak.getText();
-            repaint();
+                String s = teksvak.getText();
+                string = Integer.parseInt(s);
+                s = "";
         }
     }
 
     class TekstvakListener2 implements ActionListener {
         public void actionPerformed(ActionEvent e) {
+            String s = teksvak.getText();
             s = "";
-            repaint();
         }
 
     }
